@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../features/home/page.dart';
-import '../features/sliver/page.dart';
+import '../features/sliver_app_bar/page.dart';
 import 'app_navigator.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
@@ -29,10 +29,10 @@ class App extends StatelessWidget {
           settings: settings,
           builder: (context) => const HomePage(),
         );
-      case AppNavigator.ROUTE_SLIVERS:
+      case AppNavigator.ROUTE_SLIVER_APP_BAR:
         return MaterialPageRoute(
           settings: settings,
-          builder: (context) => const SliverPage(),
+          builder: (context) => const SliverAppBarPage(),
         );
       default:
         return MaterialPageRoute(

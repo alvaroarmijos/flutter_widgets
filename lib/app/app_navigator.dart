@@ -4,7 +4,7 @@ class AppNavigator {
   AppNavigator._();
 
   static const ROUTE_MAIN_PAGE = Navigator.defaultRouteName;
-  static const ROUTE_SLIVERS = '/slivers';
+  static const ROUTE_SLIVER_APP_BAR = '/slivers';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -20,7 +20,7 @@ class AppNavigator {
     );
   }
 
-  static void navigateToSlivers(BuildContext context) {
-    Navigator.pushNamed(context, ROUTE_SLIVERS);
+  static void navigateToSliverAppBar(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_SLIVER_APP_BAR);
   }
 }

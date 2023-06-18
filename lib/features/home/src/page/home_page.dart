@@ -15,8 +15,8 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           NavigatorWidget(
-            title: "Slivers",
-            onTap: () => AppNavigator.navigateToSlivers(context),
+            title: "Sliver App bar",
+            onTap: () => AppNavigator.navigateToSliverAppBar(context),
           ),
         ],
       ),
