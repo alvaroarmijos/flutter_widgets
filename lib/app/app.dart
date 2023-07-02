@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lalo_dart_general_examples/features/tab_page_selector/page.dart';
 
 import '../features/home/page.dart';
 import '../features/sliver_app_bar/page.dart';
@@ -33,6 +34,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const SliverAppBarPage(),
+        );
+      case AppNavigator.ROUTE_TAB_PAGE_SELECTOR:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const TabPageSelectorPage(),
         );
       default:
         return MaterialPageRoute(

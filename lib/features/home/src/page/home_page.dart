@@ -18,6 +18,10 @@ class HomePage extends StatelessWidget {
             title: "Sliver App bar",
             onTap: () => AppNavigator.navigateToSliverAppBar(context),
           ),
+          NavigatorWidget(
+            title: "TabPageSelector",
+            onTap: () => AppNavigator.navigateToTabPageSelector(context),
+          ),
         ],
       ),
     );

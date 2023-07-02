@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 class AppNavigator {
@@ -5,6 +7,7 @@ class AppNavigator {
 
   static const ROUTE_MAIN_PAGE = Navigator.defaultRouteName;
   static const ROUTE_SLIVER_APP_BAR = '/slivers';
+  static const ROUTE_TAB_PAGE_SELECTOR = '/tab-page-selectort';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -22,5 +25,9 @@ class AppNavigator {
 
   static void navigateToSliverAppBar(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_SLIVER_APP_BAR);
+  }
+
+  static void navigateToTabPageSelector(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_TAB_PAGE_SELECTOR);
   }
 }
