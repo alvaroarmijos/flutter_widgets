@@ -8,6 +8,7 @@ class AppNavigator {
   static const ROUTE_MAIN_PAGE = Navigator.defaultRouteName;
   static const ROUTE_SLIVER_APP_BAR = '/slivers';
   static const ROUTE_TAB_PAGE_SELECTOR = '/tab-page-selectort';
+  static const ROUTE_WATER_ANIMATION = '/water-animation';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -29,5 +30,9 @@ class AppNavigator {
 
   static void navigateToTabPageSelector(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_TAB_PAGE_SELECTOR);
+  }
+
+  static void navigateToWaterAnimation(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_WATER_ANIMATION);
   }
 }

@@ -22,6 +22,10 @@ class HomePage extends StatelessWidget {
             title: "TabPageSelector",
             onTap: () => AppNavigator.navigateToTabPageSelector(context),
           ),
+          NavigatorWidget(
+            title: "Water Animation",
+            onTap: () => AppNavigator.navigateToWaterAnimation(context),
+          ),
         ],
       ),
     );

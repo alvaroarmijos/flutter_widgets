@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lalo_dart_general_examples/features/tab_page_selector/page.dart';
+import 'package:lalo_dart_general_examples/features/water_animation/page.dart';
 
 import '../features/home/page.dart';
 import '../features/sliver_app_bar/page.dart';
@@ -39,6 +40,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const TabPageSelectorPage(),
+        );
+      case AppNavigator.ROUTE_WATER_ANIMATION:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const WaterAnimationPage(),
         );
       default:
         return MaterialPageRoute(
