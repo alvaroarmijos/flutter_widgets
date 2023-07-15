@@ -4,6 +4,8 @@ A collection of examples showcasing the usage of various widgets in Flutter. Thi
 
 <p>
     <img src="./docs/sliver_app_bar.png" width="200"/ hspace="5"> 
+    <img src="./docs/tab_bar_page_selector.png" width="200"/ hspace="5">
+    <img src="./docs/water_animation.png" width="200"/ hspace="5">
 </p>
 
 ## Introduction

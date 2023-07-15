@@ -27,9 +27,6 @@ class _WaterAnimationPageState extends State<WaterAnimationPage>
   late AnimationController fourthController;
   late Animation<double> fourthAnimation;
 
-  late AnimationController heigthController;
-  late Animation<double> heigthAnimation;
-
   @override
   void initState() {
     super.initState();
