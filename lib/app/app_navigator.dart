@@ -9,6 +9,7 @@ class AppNavigator {
   static const ROUTE_SLIVER_APP_BAR = '/slivers';
   static const ROUTE_TAB_PAGE_SELECTOR = '/tab-page-selectort';
   static const ROUTE_WATER_ANIMATION = '/water-animation';
+  static const ROUTE_TRICKY_LOGIN = '/tricky-login';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -34,5 +35,9 @@ class AppNavigator {
 
   static void navigateToWaterAnimation(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_WATER_ANIMATION);
+  }
+
+  static void navigateToTrickyLogin(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_TRICKY_LOGIN);
   }
 }
