@@ -10,6 +10,7 @@ class AppNavigator {
   static const ROUTE_TAB_PAGE_SELECTOR = '/tab-page-selectort';
   static const ROUTE_WATER_ANIMATION = '/water-animation';
   static const ROUTE_TRICKY_LOGIN = '/tricky-login';
+  static const ROUTE_RIPPLE_ANIMATION = '/ripple-animation';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -39,5 +40,9 @@ class AppNavigator {
 
   static void navigateToTrickyLogin(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_TRICKY_LOGIN);
+  }
+
+  static void navigateToRippleAnimation(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_RIPPLE_ANIMATION);
   }
 }

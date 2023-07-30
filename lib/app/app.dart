@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lalo_dart_general_examples/features/ripple_animation/page.dart';
 import 'package:lalo_dart_general_examples/features/tab_page_selector/page.dart';
 import 'package:lalo_dart_general_examples/features/tricky_login/page.dart';
 import 'package:lalo_dart_general_examples/features/water_animation/page.dart';
@@ -51,6 +52,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const TrickyLoginPage(),
+        );
+      case AppNavigator.ROUTE_RIPPLE_ANIMATION:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const RippleAnimationPage(),
         );
       default:
         return MaterialPageRoute(

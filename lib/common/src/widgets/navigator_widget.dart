@@ -12,10 +12,12 @@ class NavigatorWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      title: Text(title),
-      trailing: const Icon(Icons.navigate_next),
-      onTap: onTap,
+    return Card(
+      child: ListTile(
+        title: Text(title),
+        trailing: const Icon(Icons.navigate_next),
+        onTap: onTap,
+      ),
     );
   }
 }

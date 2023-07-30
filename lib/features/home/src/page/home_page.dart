@@ -30,6 +30,10 @@ class HomePage extends StatelessWidget {
             title: "Tricky Login",
             onTap: () => AppNavigator.navigateToTrickyLogin(context),
           ),
+          NavigatorWidget(
+            title: "Ripple Animation",
+            onTap: () => AppNavigator.navigateToRippleAnimation(context),
+          ),
         ],
       ),
     );
