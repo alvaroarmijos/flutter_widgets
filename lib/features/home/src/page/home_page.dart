@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
         title: const Text("Lalo Dart"),
       ),
       body: ListView(
+        padding: const EdgeInsets.all(8),
         children: [
           NavigatorWidget(
             title: "Sliver App bar",
@@ -33,6 +34,10 @@ class HomePage extends StatelessWidget {
           NavigatorWidget(
             title: "Ripple Animation",
             onTap: () => AppNavigator.navigateToRippleAnimation(context),
+          ),
+          NavigatorWidget(
+            title: "Custom Sliders",
+            onTap: () => AppNavigator.navigateToCustomSliders(context),
           ),
         ],
       ),

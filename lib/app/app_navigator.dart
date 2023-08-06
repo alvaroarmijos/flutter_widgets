@@ -11,6 +11,7 @@ class AppNavigator {
   static const ROUTE_WATER_ANIMATION = '/water-animation';
   static const ROUTE_TRICKY_LOGIN = '/tricky-login';
   static const ROUTE_RIPPLE_ANIMATION = '/ripple-animation';
+  static const ROUTE_CUSTOM_SLIDERS = '/custom-sliders';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -44,5 +45,9 @@ class AppNavigator {
 
   static void navigateToRippleAnimation(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_RIPPLE_ANIMATION);
+  }
+
+  static void navigateToCustomSliders(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_CUSTOM_SLIDERS);
   }
 }
