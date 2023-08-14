@@ -12,6 +12,7 @@ class AppNavigator {
   static const ROUTE_TRICKY_LOGIN = '/tricky-login';
   static const ROUTE_RIPPLE_ANIMATION = '/ripple-animation';
   static const ROUTE_CUSTOM_SLIDERS = '/custom-sliders';
+  static const ROUTE_LOADING_VARIANTS = '/loading-variants';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -49,5 +50,9 @@ class AppNavigator {
 
   static void navigateToCustomSliders(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_CUSTOM_SLIDERS);
+  }
+
+  static void navigateToLoadingVariants(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_LOADING_VARIANTS);
   }
 }

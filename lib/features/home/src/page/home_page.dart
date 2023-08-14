@@ -39,6 +39,10 @@ class HomePage extends StatelessWidget {
             title: "Custom Sliders",
             onTap: () => AppNavigator.navigateToCustomSliders(context),
           ),
+          NavigatorWidget(
+            title: "Loading Variants",
+            onTap: () => AppNavigator.navigateToLoadingVariants(context),
+          ),
         ],
       ),
     );

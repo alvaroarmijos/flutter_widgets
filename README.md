@@ -8,6 +8,7 @@ A collection of examples showcasing the usage of various widgets in Flutter. Thi
     <img src="./docs/water_animation.png" width="200"/ hspace="5">
     <img src="./docs/ripple_animation.png" width="200"/ hspace="5">
     <img src="./docs/sliders.png" width="200"/ hspace="5">
+    <img src="./docs/loading_variants.png" width="200"/ hspace="5">
 </p>
 
 ## Introduction
