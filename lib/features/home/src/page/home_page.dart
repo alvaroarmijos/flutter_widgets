@@ -43,6 +43,10 @@ class HomePage extends StatelessWidget {
             title: "Loading Variants",
             onTap: () => AppNavigator.navigateToLoadingVariants(context),
           ),
+          NavigatorWidget(
+            title: "Shimmer Page",
+            onTap: () => AppNavigator.navigateToShimmerPage(context),
+          ),
         ],
       ),
     );
