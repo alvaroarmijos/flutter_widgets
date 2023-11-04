@@ -14,6 +14,7 @@ class AppNavigator {
   static const ROUTE_CUSTOM_SLIDERS = '/custom-sliders';
   static const ROUTE_LOADING_VARIANTS = '/loading-variants';
   static const ROUTE_SHIMMER = '/shimmer';
+  static const ROUTE_PLAY_ANIMATED = '/play-animated';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -59,5 +60,9 @@ class AppNavigator {
 
   static void navigateToShimmerPage(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_SHIMMER);
+  }
+
+  static void navigateToPlayAnimatedPage(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_PLAY_ANIMATED);
   }
 }

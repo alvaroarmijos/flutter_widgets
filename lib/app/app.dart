@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lalo_dart_general_examples/features/custom_sliders/page.dart';
 import 'package:lalo_dart_general_examples/features/loading_variants/page.dart';
+import 'package:lalo_dart_general_examples/features/play_animated_button/page.dart';
 import 'package:lalo_dart_general_examples/features/ripple_animation/page.dart';
 import 'package:lalo_dart_general_examples/features/shimmer/page.dart';
 import 'package:lalo_dart_general_examples/features/tab_page_selector/page.dart';
@@ -75,6 +76,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const ShimmerPage(),
+        );
+      case AppNavigator.ROUTE_PLAY_ANIMATED:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const PlayAnimatedButtonPage(),
         );
       default:
         return MaterialPageRoute(

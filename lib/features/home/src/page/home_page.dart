@@ -47,6 +47,10 @@ class HomePage extends StatelessWidget {
             title: "Shimmer Page",
             onTap: () => AppNavigator.navigateToShimmerPage(context),
           ),
+          NavigatorWidget(
+            title: "Play animated button",
+            onTap: () => AppNavigator.navigateToPlayAnimatedPage(context),
+          ),
         ],
       ),
     );
