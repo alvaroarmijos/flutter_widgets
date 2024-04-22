@@ -15,6 +15,7 @@ class AppNavigator {
   static const ROUTE_LOADING_VARIANTS = '/loading-variants';
   static const ROUTE_SHIMMER = '/shimmer';
   static const ROUTE_PLAY_ANIMATED = '/play-animated';
+  static const ROUTE_CUSTOM_MODAL = '/custom-modal';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -64,5 +65,9 @@ class AppNavigator {
 
   static void navigateToPlayAnimatedPage(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_PLAY_ANIMATED);
+  }
+
+  static void navigateToCustomModalPage(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_CUSTOM_MODAL);
   }
 }

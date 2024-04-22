@@ -62,7 +62,7 @@ class _TrickyLoginPageState extends State<TrickyLoginPage> {
                 padding: const EdgeInsets.only(bottom: 280),
                 child: ValueListenableBuilder(
                   valueListenable: _angleUserNotifier,
-                  builder: (context, value, _) {
+                  builder: (BuildContext context, double value, _) {
                     return Transform.rotate(
                       angle: value,
                       alignment: Alignment.bottomRight,
@@ -81,7 +81,7 @@ class _TrickyLoginPageState extends State<TrickyLoginPage> {
                   padding: const EdgeInsets.only(bottom: 200),
                   child: ValueListenableBuilder(
                     valueListenable: _anglePasswordNotifier,
-                    builder: (context, value, _) {
+                    builder: (BuildContext context, double value, _) {
                       return Transform.rotate(
                         angle: value,
                         alignment: Alignment.topLeft,

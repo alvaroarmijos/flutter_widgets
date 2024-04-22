@@ -5,10 +5,12 @@ class NavigatorWidget extends StatelessWidget {
     super.key,
     required this.title,
     this.onTap,
+    this.newItem = false,
   });
 
   final String title;
   final VoidCallback? onTap;
+  final bool newItem;
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +19,7 @@ class NavigatorWidget extends StatelessWidget {
         title: Text(title),
         trailing: const Icon(Icons.navigate_next),
         onTap: onTap,
+        leading: newItem ? const Icon(Icons.new_releases_rounded) : null,
       ),
     );
   }

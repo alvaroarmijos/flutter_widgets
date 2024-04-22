@@ -51,6 +51,11 @@ class HomePage extends StatelessWidget {
             title: "Play animated button",
             onTap: () => AppNavigator.navigateToPlayAnimatedPage(context),
           ),
+          NavigatorWidget(
+            title: "Custom Modal",
+            newItem: true,
+            onTap: () => AppNavigator.navigateToCustomModalPage(context),
+          ),
         ],
       ),
     );
