@@ -16,6 +16,7 @@ class AppNavigator {
   static const ROUTE_SHIMMER = '/shimmer';
   static const ROUTE_PLAY_ANIMATED = '/play-animated';
   static const ROUTE_CUSTOM_MODAL = '/custom-modal';
+  static const ROUTE_BUTTON_STYLES = '/button-styles';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -69,5 +70,9 @@ class AppNavigator {
 
   static void navigateToCustomModalPage(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_CUSTOM_MODAL);
+  }
+
+  static void navigateToButtonStylesPage(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_BUTTON_STYLES);
   }
 }

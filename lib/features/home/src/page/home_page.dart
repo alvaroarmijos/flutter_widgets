@@ -53,8 +53,12 @@ class HomePage extends StatelessWidget {
           ),
           NavigatorWidget(
             title: "Custom Modal",
-            newItem: true,
             onTap: () => AppNavigator.navigateToCustomModalPage(context),
+          ),
+          NavigatorWidget(
+            title: "Button Styles",
+            newItem: true,
+            onTap: () => AppNavigator.navigateToButtonStylesPage(context),
           ),
         ],
       ),

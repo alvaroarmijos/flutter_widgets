@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lalo_dart_general_examples/features/button_styles/page.dart';
 import 'package:lalo_dart_general_examples/features/custom_modal/page.dart';
 import 'package:lalo_dart_general_examples/features/custom_sliders/page.dart';
 import 'package:lalo_dart_general_examples/features/loading_variants/page.dart';
@@ -87,6 +88,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const CustomModalPage(),
+        );
+      case AppNavigator.ROUTE_BUTTON_STYLES:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const ButtonStylesPage(),
         );
       default:
         return MaterialPageRoute(

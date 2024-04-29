@@ -11,6 +11,7 @@ A collection of examples showcasing the usage of various widgets in Flutter. Thi
     <img src="./docs/loading_variants.png" width="200"/ hspace="5">
     <img src="./docs/play_animated_button.png" width="200"/ hspace="5">
     <img src="./docs/custom_modal.gif" width="200"/ hspace="5">
+    <img src="./docs/button_styles.png" width="200"/ hspace="5">
 </p>
 
 ## Introduction
