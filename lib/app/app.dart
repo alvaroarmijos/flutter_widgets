@@ -3,6 +3,7 @@ import 'package:lalo_dart_general_examples/features/button_styles/page.dart';
 import 'package:lalo_dart_general_examples/features/custom_modal/page.dart';
 import 'package:lalo_dart_general_examples/features/custom_sliders/page.dart';
 import 'package:lalo_dart_general_examples/features/loading_variants/page.dart';
+import 'package:lalo_dart_general_examples/features/menu_ui_animation/menu_ui_animation.dart';
 import 'package:lalo_dart_general_examples/features/play_animated_button/page.dart';
 import 'package:lalo_dart_general_examples/features/ripple_animation/page.dart';
 import 'package:lalo_dart_general_examples/features/shimmer/page.dart';
@@ -93,6 +94,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const ButtonStylesPage(),
+        );
+      case AppNavigator.ROUTE_MENU_ANIMATION:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const MenuUiAnimationPage(),
         );
       default:
         return MaterialPageRoute(

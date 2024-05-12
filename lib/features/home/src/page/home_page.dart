@@ -16,6 +16,11 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         children: [
           NavigatorWidget(
+            title: "Menu UI Animation",
+            newItem: true,
+            onTap: () => AppNavigator.navigateToMenuUiAnimationPage(context),
+          ),
+          NavigatorWidget(
             title: "Sliver App bar",
             onTap: () => AppNavigator.navigateToSliverAppBar(context),
           ),
@@ -57,7 +62,6 @@ class HomePage extends StatelessWidget {
           ),
           NavigatorWidget(
             title: "Button Styles",
-            newItem: true,
             onTap: () => AppNavigator.navigateToButtonStylesPage(context),
           ),
         ],
