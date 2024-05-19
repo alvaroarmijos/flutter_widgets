@@ -16,8 +16,12 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         children: [
           NavigatorWidget(
-            title: "Menu UI Animation",
+            title: "Rive Animations",
             newItem: true,
+            onTap: () => AppNavigator.navigateToRiveAnimationsPage(context),
+          ),
+          NavigatorWidget(
+            title: "Menu UI Animation",
             onTap: () => AppNavigator.navigateToMenuUiAnimationPage(context),
           ),
           NavigatorWidget(

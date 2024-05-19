@@ -18,6 +18,7 @@ class AppNavigator {
   static const ROUTE_CUSTOM_MODAL = '/custom-modal';
   static const ROUTE_BUTTON_STYLES = '/button-styles';
   static const ROUTE_MENU_ANIMATION = '/menu-animation';
+  static const ROUTE_RIVE_ANIMATIONS = '/rive-animations';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -79,5 +80,9 @@ class AppNavigator {
 
   static void navigateToMenuUiAnimationPage(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_MENU_ANIMATION);
+  }
+
+  static void navigateToRiveAnimationsPage(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_RIVE_ANIMATIONS);
   }
 }
