@@ -19,6 +19,7 @@ class AppNavigator {
   static const ROUTE_BUTTON_STYLES = '/button-styles';
   static const ROUTE_MENU_ANIMATION = '/menu-animation';
   static const ROUTE_RIVE_ANIMATIONS = '/rive-animations';
+  static const ROUTE_TAB_BAR_VIEW = '/tab-bar-view';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -84,5 +85,9 @@ class AppNavigator {
 
   static void navigateToRiveAnimationsPage(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_RIVE_ANIMATIONS);
+  }
+
+  static void navigateToTabBarViewPage(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_TAB_BAR_VIEW);
   }
 }

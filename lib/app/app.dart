@@ -8,6 +8,7 @@ import 'package:lalo_dart_general_examples/features/play_animated_button/page.da
 import 'package:lalo_dart_general_examples/features/ripple_animation/page.dart';
 import 'package:lalo_dart_general_examples/features/rive_animations/rive_animations.dart';
 import 'package:lalo_dart_general_examples/features/shimmer/page.dart';
+import 'package:lalo_dart_general_examples/features/tab_bar_view/page.dart';
 import 'package:lalo_dart_general_examples/features/tab_page_selector/page.dart';
 import 'package:lalo_dart_general_examples/features/tricky_login/page.dart';
 import 'package:lalo_dart_general_examples/features/water_animation/page.dart';
@@ -105,6 +106,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const RiveAnimationsPage(),
+        );
+      case AppNavigator.ROUTE_TAB_BAR_VIEW:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const TabBarViewPage(),
         );
       default:
         return MaterialPageRoute(
