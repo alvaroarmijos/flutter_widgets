@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lalo_dart_general_examples/features/button_styles/page.dart';
 import 'package:lalo_dart_general_examples/features/custom_modal/page.dart';
 import 'package:lalo_dart_general_examples/features/custom_sliders/page.dart';
+import 'package:lalo_dart_general_examples/features/isolates/isolates.dart';
 import 'package:lalo_dart_general_examples/features/loading_variants/page.dart';
 import 'package:lalo_dart_general_examples/features/menu_ui_animation/menu_ui_animation.dart';
 import 'package:lalo_dart_general_examples/features/play_animated_button/page.dart';
@@ -111,6 +112,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const TabBarViewPage(),
+        );
+      case AppNavigator.ROUTE_ISOLATES:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const IsolatesPage(),
         );
       default:
         return MaterialPageRoute(

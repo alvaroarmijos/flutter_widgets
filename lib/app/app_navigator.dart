@@ -20,6 +20,7 @@ class AppNavigator {
   static const ROUTE_MENU_ANIMATION = '/menu-animation';
   static const ROUTE_RIVE_ANIMATIONS = '/rive-animations';
   static const ROUTE_TAB_BAR_VIEW = '/tab-bar-view';
+  static const ROUTE_ISOLATES = '/isolates';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -89,5 +90,9 @@ class AppNavigator {
 
   static void navigateToTabBarViewPage(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_TAB_BAR_VIEW);
+  }
+
+  static void navigateToIsolatesPage(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_ISOLATES);
   }
 }
