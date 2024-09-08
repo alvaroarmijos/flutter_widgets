@@ -15,6 +15,7 @@ A collection of examples showcasing the usage of various widgets in Flutter. Thi
     <img src="./docs/menu_ui_animation.gif" width="200"/ hspace="5">
     <img src="./docs/miner_loading.gif" width="200"/ hspace="5">
     <img src="./docs/tab_bar_view.png" width="200"/ hspace="5">
+    <img src="./docs/chat.png" width="200"/ hspace="5">
 </p>
 
 ## Introduction

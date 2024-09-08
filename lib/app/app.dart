@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lalo_dart_general_examples/features/button_styles/page.dart';
+import 'package:lalo_dart_general_examples/features/chat/chat.dart';
 import 'package:lalo_dart_general_examples/features/custom_modal/page.dart';
 import 'package:lalo_dart_general_examples/features/custom_sliders/page.dart';
 import 'package:lalo_dart_general_examples/features/isolates/isolates.dart';
@@ -117,6 +118,11 @@ class App extends StatelessWidget {
         return MaterialPageRoute(
           settings: settings,
           builder: (context) => const IsolatesPage(),
+        );
+      case AppNavigator.ROUTE_CHAT:
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) => const ChatPage(),
         );
       default:
         return MaterialPageRoute(

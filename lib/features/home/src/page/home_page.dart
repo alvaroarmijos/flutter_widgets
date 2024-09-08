@@ -16,8 +16,12 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         children: [
           NavigatorWidget(
-            title: "Isolates Example",
+            title: "Chat Page Example",
             newItem: true,
+            onTap: () => AppNavigator.navigateToChatPage(context),
+          ),
+          NavigatorWidget(
+            title: "Isolates Example",
             onTap: () => AppNavigator.navigateToIsolatesPage(context),
           ),
           NavigatorWidget(

@@ -21,6 +21,7 @@ class AppNavigator {
   static const ROUTE_RIVE_ANIMATIONS = '/rive-animations';
   static const ROUTE_TAB_BAR_VIEW = '/tab-bar-view';
   static const ROUTE_ISOLATES = '/isolates';
+  static const ROUTE_CHAT = '/chat';
 
   static void navigateBack(BuildContext context) => Navigator.pop(context);
 
@@ -94,5 +95,9 @@ class AppNavigator {
 
   static void navigateToIsolatesPage(BuildContext context) {
     Navigator.pushNamed(context, ROUTE_ISOLATES);
+  }
+
+  static void navigateToChatPage(BuildContext context) {
+    Navigator.pushNamed(context, ROUTE_CHAT);
   }
 }
